@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lumière Nail & Hair Studio — Elegant Beauty</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span>L</span><span>U</span><span>M</span><span>I</span><span>È</span><span>R</span><span>E</span>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="logo">Lumière<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#booking">Booking</a></li>
+      </ul>
+      <a href="#booking" class="btn btn-sm">Book Now</a>
+      <button class="burger" id="burger" aria-label="menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-orbs">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="eyebrow reveal">✦ Luxury Nail & Hair Studio ✦</p>
+      <h1 class="hero-title">
+        <span class="reveal-word">Where</span>
+        <span class="reveal-word italic">elegance</span>
+        <span class="reveal-word">meets</span>
+        <span class="reveal-word italic">artistry</span>
+      </h1>
+      <p class="hero-sub reveal">An intimate atelier crafting bespoke nail art and radiant hair transformations in a serene, couture-inspired sanctuary.</p>
+      <div class="hero-cta reveal">
+        <a href="#booking" class="btn">Reserve Your Visit</a>
+        <a href="#services" class="btn btn-ghost">Explore Services</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div><strong>12+</strong><span>Years of artistry</span></div>
+        <div><strong>4.9★</strong><span>Guest rating</span></div>
+        <div><strong>60+</strong><span>Signature looks</span></div>
+      </div>
+    </div>
+    <div class="scroll-hint"><span></span>Scroll</div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container grid-2">
+      <div class="about-img reveal">
+        <div class="img-frame">
+          <div class="img-placeholder img1"></div>
+          <div class="img-placeholder img2"></div>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="eyebrow reveal">— Our Studio</p>
+        <h2 class="reveal">A sanctuary for the<br><em>modern muse</em>.</h2>
+        <p class="reveal">At Lumière, every detail is considered. From hand-mixed gel shades to custom hair couture, our artists blend technical precision with soulful creativity — crafting moments of beauty you carry with you long after you leave.</p>
+        <ul class="feature-list reveal">
+          <li>◈ Clean, sterilized tools & premium products</li>
+          <li>◈ Private, tranquil treatment suites</li>
+          <li>◈ Award-winning master stylists</li>
+          <li>◈ Complimentary champagne service</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal">— The Menu</p>
+        <h2 class="reveal">Signature <em>Services</em></h2>
+        <p class="lead reveal">Curated treatments designed to indulge, restore, and reveal your most radiant self.</p>
+      </div>
+
+      <div class="tabs reveal">
+        <button class="tab active" data-cat="nails">Nails</button>
+        <button class="tab" data-cat="hair">Hair</button>
+        <button class="tab" data-cat="spa">Spa Add-ons</button>
+      </div>
+
+      <div class="service-grid" id="serviceGrid"></div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal">— Lookbook</p>
+        <h2 class="reveal">Moments of <em>beauty</em></h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gal g1 reveal"></div>
+        <div class="gal g2 reveal"></div>
+        <div class="gal g3 reveal"></div>
+        <div class="gal g4 reveal"></div>
+        <div class="gal g5 reveal"></div>
+        <div class="gal g6 reveal"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking" class="booking">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal">— Reservations</p>
+        <h2 class="reveal">Book your <em>appointment</em></h2>
+        <p class="lead reveal">Select a service, choose your date and time, and we'll take care of the rest.</p>
+      </div>
+
+      <div class="booking-wrap reveal">
+        <!-- Steps -->
+        <div class="steps">
+          <div class="step active" data-step="1"><span>1</span>Service</div>
+          <div class="step" data-step="2"><span>2</span>Date & Time</div>
+          <div class="step" data-step="3"><span>3</span>Details</div>
+          <div class="step" data-step="4"><span>4</span>Confirm</div>
+        </div>
+
+        <!-- Step 1: Service -->
+        <div class="booking-step active" data-step="1">
+          <h3>Select your service</h3>
+          <div class="service-picker" id="servicePicker"></div>
+          <div class="booking-nav">
+            <span></span>
+            <button class="btn" id="next1" disabled>Continue →</button>
+          </div>
+        </div>
+
+        <!-- Step 2: Calendar -->
+        <div class="booking-step" data-step="2">
+          <h3>Choose a date & time</h3>
+          <div class="calendar-wrap">
+            <div class="calendar">
+              <div class="cal-head">
+                <button id="prevMonth">‹</button>
+                <h4 id="monthLabel"></h4>
+                <button id="nextMonth">›</button>
+              </div>
+              <div class="cal-weekdays">
+                <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+              </div>
+              <div class="cal-days" id="calDays"></div>
+            </div>
+            <div class="time-slots">
+              <h4>Available times</h4>
+              <p class="time-date" id="timeDate">Select a date to see times</p>
+              <div class="slots" id="slots"></div>
+            </div>
+          </div>
+          <div class="booking-nav">
+            <button class="btn btn-ghost" data-back="1">← Back</button>
+            <button class="btn" id="next2" disabled>Continue →</button>
+          </div>
+        </div>
+
+        <!-- Step 3: Details -->
+        <div class="booking-step" data-step="3">
+          <h3>Your details</h3>
+          <form class="details-form" id="detailsForm">
+            <div class="field"><label>Full Name</label><input type="text" id="fName" required /></div>
+            <div class="field"><label>Email</label><input type="email" id="fEmail" required /></div>
+            <div class="field"><label>Phone</label><input type="tel" id="fPhone" required /></div>
+            <div class="field"><label>Special requests (optional)</label><textarea id="fNotes" rows="3"></textarea></div>
+          </form>
+          <div class="booking-nav">
+            <button class="btn btn-ghost" data-back="2">← Back</button>
+            <button class="btn" id="next3">Review →</button>
+          </div>
+        </div>
+
+        <!-- Step 4: Confirm -->
+        <div class="booking-step" data-step="4">
+          <h3>Confirm your reservation</h3>
+          <div class="summary" id="summary"></div>
+          <div class="booking-nav">
+            <button class="btn btn-ghost" data-back="3">← Back</button>
+            <button class="btn" id="confirmBtn">✦ Confirm Booking</button>
+          </div>
+        </div>
+
+        <!-- Success -->
+        <div class="booking-step success" data-step="5">
+          <div class="success-icon">✓</div>
+          <h3>Reservation confirmed</h3>
+          <p>Thank you, <span id="successName"></span>. We've emailed your confirmation and look forward to pampering you.</p>
+          <button class="btn" id="resetBtn">Book another</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3 class="logo">Lumière<span>.</span></h3>
+        <p>Where elegance meets artistry.</p>
+      </div>
+      <div>
+        <h5>Visit</h5>
+        <p>128 Rosewood Avenue<br>Beverly Hills, CA 90210</p>
+      </div>
+      <div>
+        <h5>Hours</h5>
+        <p>Tue – Sat: 10am – 8pm<br>Sun: 11am – 6pm<br>Mon: Closed</p>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <p>hello@lumiere.studio<br>(310) 555-0199</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Lumière Nail & Hair Studio — Crafted with care.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
